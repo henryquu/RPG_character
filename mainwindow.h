@@ -84,7 +84,7 @@ private:
     string get_type();
 
     // check if there are characters like '"./
-    bool check_for_symbols();
+    bool check_for_symbols(QString name);
 };
 
 #endif // MAINWINDOW_H

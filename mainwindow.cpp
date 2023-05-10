@@ -150,6 +150,10 @@ void MainWindow::pbCreateChar_clicked()
         ui->statusbar->showMessage("Insert a name");
         return;
     }
+    if (check_for_symbols(name)){
+        ui->statusbar->showMessage("Non alphanumeric characters not allowed!");
+        return;
+    }
 
     character = create_character(
         name.toStdString(), get_class(), get_race()
@@ -351,6 +355,11 @@ void MainWindow::pbCreateItem_clicked(){
         return;
     }
 
+    if (check_for_symbols(name)){
+        ui->statusbar->showMessage("Non alphanumeric characters not allowed!");
+        return;
+    }
+
     cur_item = create_item(name.toStdString(), get_type());
 
     if (cur_item->weight > weight_avaible(character->inventory)){
@@ -381,4 +390,10 @@ string MainWindow::get_type(){
         }
 
     return item_types[checked];
+}
+
+bool MainWindow::check_for_symbols(QString name){
+    static QRegularExpression re(R"([^a-zA-Z\d\s:])");
+
+    return re.match(name).hasMatch();
 }
