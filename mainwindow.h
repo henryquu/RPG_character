@@ -43,6 +43,7 @@ private slots:
 
     void pbCreateItem_clicked();
 
+    void pbRemoveChar_clicked();
 
 private:
     Ui::MainWindow *ui;

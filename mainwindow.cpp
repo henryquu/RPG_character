@@ -67,6 +67,9 @@ void MainWindow::set_connections(){
 
     connect(ui->pbCreateItem, &QPushButton::clicked,
             this, &MainWindow::pbCreateItem_clicked);
+
+    connect(ui->pbRemoveChar, &QPushButton::clicked,
+            this, &MainWindow::pbRemoveChar_clicked);
 }
 
 void MainWindow::init_types_rbs(){
@@ -153,6 +156,12 @@ void MainWindow::pbCreateChar_clicked()
     );
 
     showCharacterMenu();
+}
+
+void MainWindow::pbRemoveChar_clicked(){
+    remove_from_file(character->name, PATH_CHAR);
+    character = nullptr;
+    showMainMenu();
 }
 
 void MainWindow::showCharacterMenu(){

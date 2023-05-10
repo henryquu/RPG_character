@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="mainMenu">
      <widget class="QFrame" name="frame">
@@ -52,16 +52,6 @@
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
-        <item row="1" column="1">
-         <widget class="QSpinBox" name="sbCharNr">
-          <property name="focusPolicy">
-           <enum>Qt::ClickFocus</enum>
-          </property>
-          <property name="minimum">
-           <number>1</number>
-          </property>
-         </widget>
-        </item>
         <item row="0" column="0">
          <widget class="QPushButton" name="pbNewChar">
           <property name="text">
@@ -73,6 +63,16 @@
          <widget class="QPushButton" name="pbLoadChar">
           <property name="text">
            <string>Load a character</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="sbCharNr">
+          <property name="focusPolicy">
+           <enum>Qt::ClickFocus</enum>
+          </property>
+          <property name="minimum">
+           <number>1</number>
           </property>
          </widget>
         </item>
@@ -276,6 +276,13 @@
         <widget class="QPushButton" name="pbItemMenu">
          <property name="text">
           <string>Show equipment menu</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbRemoveChar">
+         <property name="text">
+          <string>Remove character</string>
          </property>
         </widget>
        </item>
