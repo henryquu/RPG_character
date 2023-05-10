@@ -82,6 +82,9 @@ private:
 
     // get chosen item type in Create item menu
     string get_type();
+
+    // check if there are characters like '"./
+    bool check_for_symbols();
 };
 
 #endif // MAINWINDOW_H

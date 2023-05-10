@@ -160,7 +160,11 @@ void MainWindow::pbCreateChar_clicked()
 
 void MainWindow::pbRemoveChar_clicked(){
     remove_from_file(character->name, PATH_CHAR);
+    remove_from_file(character->name, PATH_EQ);
+
     character = nullptr;
+    cur_item = nullptr;
+
     showMainMenu();
 }
 
