@@ -1,0 +1,4 @@
+BA | Fa Bow 1 66 81 88 5 27 22 16 | H Helmet 1 65 0 0 0 | Cf Sword 0 67 93 104 1 18 19 11
+Blo | kl Helmet 1 63 21 0 0 | ccv Wand 1 62 94 105 5 27 25 21
+Fca | B Bow 1 69 59 63 5 20 16 23 | V Leggings 1 64 25 25 22
+Addd | 

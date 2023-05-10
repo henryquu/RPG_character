@@ -6,9 +6,9 @@
 #include <string>
 
 // default file paths for data
-#define PATH_CHAR "data/characters.txt"
-#define PATH_EQ "data/equipment.txt"
-#define PATH_TMP "data/tmp.txt"
+#define PATH_CHAR "../data/characters.txt"
+#define PATH_EQ "../data/equipment.txt"
+#define PATH_TMP "../data/tmp.txt"
 
 
 using std::string;

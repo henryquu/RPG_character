@@ -1,0 +1,4 @@
+BA Human Archer 60 50 30 1
+Blo Elf Archer 40 80 20 1
+Fca Elf Mage 60 60 20 0
+Addd Human Mage 80 30 30 0
