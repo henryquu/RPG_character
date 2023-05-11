@@ -323,7 +323,7 @@ void MainWindow::pbEquip_clicked()
 
     if (cur_item->equipped)
         cur_item->equipped = false;
-    else if (!type_avaible(character->inventory, cur_item->type)){
+    else if (!type_available(character->inventory, cur_item->type)){
         ui->statusbar->showMessage("Cannot equip, slot taken!");
         return;
     }

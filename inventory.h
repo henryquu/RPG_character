@@ -41,7 +41,7 @@ int weight_avaible(Item *ptr);
 bool is_weapon(string type);
 
 // checks if chosen type of equipment is not used already
-bool type_avaible(Item *ptr, string type);
+bool type_available(Item *ptr, string type);
 
 // sums basic stats from equipped items
 int *stats_from_equipment(Item *ptr);

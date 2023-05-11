@@ -51,7 +51,7 @@ bool is_weapon(string type){
     return false;
 }
 
-bool type_avaible(Item *ptr, string type){
+bool type_available(Item *ptr, string type){
     while (ptr){
         if (ptr->equipped)
             if (type.compare(ptr->type) == 0 || (is_weapon(type) && is_weapon(ptr->type)))
