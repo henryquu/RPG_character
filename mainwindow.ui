@@ -24,16 +24,16 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="mainMenu">
      <widget class="QFrame" name="frame">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>100</x>
         <y>50</y>
         <width>271</width>
-        <height>400</height>
+        <height>451</height>
        </rect>
       </property>
       <property name="frameShape">
@@ -45,24 +45,24 @@
       <widget class="QWidget" name="gridLayoutWidget">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>10</y>
-         <width>217</width>
+         <x>0</x>
+         <y>-20</y>
+         <width>241</width>
          <height>151</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
-        <item row="0" column="0">
-         <widget class="QPushButton" name="pbNewChar">
-          <property name="text">
-           <string>Create a new character</string>
-          </property>
-         </widget>
-        </item>
         <item row="1" column="0">
          <widget class="QPushButton" name="pbLoadChar">
           <property name="text">
            <string>Load a character</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pbNewChar">
+          <property name="text">
+           <string>Create a new character</string>
           </property>
          </widget>
         </item>
@@ -81,9 +81,9 @@
       <widget class="QPushButton" name="pbExit">
        <property name="geometry">
         <rect>
-         <x>21</x>
-         <y>350</y>
-         <width>160</width>
+         <x>0</x>
+         <y>420</y>
+         <width>200</width>
          <height>29</height>
         </rect>
        </property>
@@ -104,41 +104,6 @@
      </widget>
     </widget>
     <widget class="QWidget" name="charCreate">
-     <widget class="QWidget" name="verticalLayoutWidget_9">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>60</y>
-        <width>203</width>
-        <height>401</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_9">
-       <property name="spacing">
-        <number>100</number>
-       </property>
-       <property name="sizeConstraint">
-        <enum>QLayout::SetDefaultConstraint</enum>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <item>
-        <widget class="QPushButton" name="pbCreateChar">
-         <property name="text">
-          <string>Create</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pbMainMenu_2">
-         <property name="text">
-          <string>Return to the main menu</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
      <widget class="QGroupBox" name="gbRace">
       <property name="geometry">
        <rect>
@@ -234,9 +199,9 @@
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>450</x>
+        <x>446</x>
         <y>80</y>
-        <width>197</width>
+        <width>251</width>
         <height>30</height>
        </rect>
       </property>
@@ -253,15 +218,41 @@
        </item>
       </layout>
      </widget>
+     <widget class="QPushButton" name="pbMainMenu_2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>470</y>
+        <width>201</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Return to the main menu</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbCreateChar">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>201</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="charMenu">
      <widget class="QWidget" name="verticalLayoutWidget_8">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>50</y>
+        <x>100</x>
+        <y>-10</y>
         <width>203</width>
-        <height>331</height>
+        <height>371</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -286,13 +277,6 @@
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QPushButton" name="pbMainMenu">
-         <property name="text">
-          <string>Return to the main menu</string>
-         </property>
-        </widget>
-       </item>
       </layout>
      </widget>
      <widget class="QTextBrowser" name="charStats">
@@ -305,15 +289,28 @@
        </rect>
       </property>
      </widget>
+     <widget class="QPushButton" name="pbMainMenu">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>470</y>
+        <width>201</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Return to the main menu</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="itemMenu">
      <widget class="QWidget" name="verticalLayoutWidget_4">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>50</y>
-        <width>221</width>
-        <height>331</height>
+        <x>100</x>
+        <y>-10</y>
+        <width>201</width>
+        <height>391</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -347,20 +344,6 @@
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QPushButton" name="pbNextItem">
-         <property name="text">
-          <string>Go to the next item</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pbCharMenu">
-         <property name="text">
-          <string>Return to the character menu</string>
-         </property>
-        </widget>
-       </item>
       </layout>
      </widget>
      <widget class="QTextBrowser" name="itemStats">
@@ -371,6 +354,32 @@
         <width>300</width>
         <height>450</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbCharMenu">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>470</y>
+        <width>201</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Return to the character menu</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbNextItem">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>520</y>
+        <width>219</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Go to the next item</string>
       </property>
      </widget>
     </widget>
@@ -396,41 +405,6 @@
         <widget class="QLineEdit" name="leItemName">
          <property name="mouseTracking">
           <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_12">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>40</y>
-        <width>203</width>
-        <height>401</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_12">
-       <property name="spacing">
-        <number>100</number>
-       </property>
-       <property name="sizeConstraint">
-        <enum>QLayout::SetDefaultConstraint</enum>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <item>
-        <widget class="QPushButton" name="pbCreateItem">
-         <property name="text">
-          <string>Create</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pbCharMenu2">
-         <property name="text">
-          <string>Return to Item Menu</string>
          </property>
         </widget>
        </item>
@@ -474,6 +448,32 @@
         </item>
        </layout>
       </widget>
+     </widget>
+     <widget class="QPushButton" name="pbCreateItem">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>201</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbCharMenu2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>470</y>
+        <width>201</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Return to Item Menu</string>
+      </property>
      </widget>
     </widget>
    </widget>

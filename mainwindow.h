@@ -45,6 +45,7 @@ private slots:
 
     void pbRemoveChar_clicked();
 
+
 private:
     Ui::MainWindow *ui;
     Character *character = nullptr;
