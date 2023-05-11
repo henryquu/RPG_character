@@ -198,7 +198,8 @@ void MainWindow::print_character(){
         "Name: " + QString::fromStdString(character->name) + "\n" +
         "Race: " + QString::fromStdString(character->race) + "\n" +
         "Class: " + QString::fromStdString(character->class_) + "\n\n" +
-        "Carry capacity: " + QString::number(weight_avaible(character->inventory)) + " / 450\n\n" +
+        "Carry capacity: " + QString::number(weight_avaible(character->inventory)) +
+            " / " + QString::number(MAX_WEIGHT) + "\n\n" +
         "  Health: " + QString::number(stats_with_eq[2] * 2) + "\n" +
         "  Mana: " + QString::number(stats_with_eq[0] * 1.5) + "\n" +
         "  Attack speed: " + QString::number(stats_with_eq[1] / 80.) + "\n" +
