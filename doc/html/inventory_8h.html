@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RPG Character Creator: Dokumentacja pliku inventory.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RPG Character Creator
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja pliku inventory.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla inventory.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="inventory_8h__incl.png" border="0" usemap="#ainventory_8h" alt=""/></div>
+<map name="ainventory_8h" id="ainventory_8h">
+<area shape="rect" title=" " alt="" coords="42,5,125,32"/>
+<area shape="rect" href="utils_8h.html" title=" " alt="" coords="56,80,112,107"/>
+<area shape="rect" title=" " alt="" coords="5,155,77,181"/>
+<area shape="rect" title=" " alt="" coords="101,155,154,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="inventory_8h__dep__incl.png" border="0" usemap="#ainventory_8hdep" alt=""/></div>
+<map name="ainventory_8hdep" id="ainventory_8hdep">
+<area shape="rect" title=" " alt="" coords="141,5,225,32"/>
+<area shape="rect" href="characters_8h.html" title=" " alt="" coords="76,80,170,107"/>
+<area shape="rect" href="inventory_8cpp.html" title=" " alt="" coords="194,80,292,107"/>
+<area shape="rect" href="characters_8cpp.html" title=" " alt="" coords="5,155,113,181"/>
+<area shape="rect" href="mainwindow_8h.html" title=" " alt="" coords="137,155,240,181"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="91,229,166,256"/>
+<area shape="rect" href="mainwindow_8cpp.html" title=" " alt="" coords="190,229,307,256"/>
+</map>
+</div>
+</div>
+<p><a href="inventory_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_item.html">Item</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a943995a7bf30da3587664920856533ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#a943995a7bf30da3587664920856533ab">MAX_WEIGHT</a>&#160;&#160;&#160;600</td></tr>
+<tr class="separator:a943995a7bf30da3587664920856533ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a88afb99960420b6e88b86d9a686383"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#a9a88afb99960420b6e88b86d9a686383">ITEMS_TYPES_COUNT</a>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a9a88afb99960420b6e88b86d9a686383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a1fd953335eb2fa7fd6057c70995c85c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#a1fd953335eb2fa7fd6057c70995c85c0">inventory_weight</a> (<a class="el" href="struct_item.html">Item</a> *ptr)</td></tr>
+<tr class="separator:a1fd953335eb2fa7fd6057c70995c85c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae67c5a64c8f5931a2b73646708e8fa53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#ae67c5a64c8f5931a2b73646708e8fa53">weight_avaible</a> (<a class="el" href="struct_item.html">Item</a> *ptr)</td></tr>
+<tr class="separator:ae67c5a64c8f5931a2b73646708e8fa53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258e5d47a984637f28a57d438299a0c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#a258e5d47a984637f28a57d438299a0c4">is_weapon</a> (string type)</td></tr>
+<tr class="separator:a258e5d47a984637f28a57d438299a0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3330dcd3c6142d0f78852a761c962d99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#a3330dcd3c6142d0f78852a761c962d99">type_available</a> (<a class="el" href="struct_item.html">Item</a> *ptr, string type)</td></tr>
+<tr class="separator:a3330dcd3c6142d0f78852a761c962d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d8e3820560dc127e3b118e6e15ee91"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#a49d8e3820560dc127e3b118e6e15ee91">stats_from_equipment</a> (<a class="el" href="struct_item.html">Item</a> *ptr)</td></tr>
+<tr class="separator:a49d8e3820560dc127e3b118e6e15ee91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d77286afbfc6b17a0d1451ad95ab49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#aa5d77286afbfc6b17a0d1451ad95ab49">add_item</a> (<a class="el" href="struct_item.html">Item</a> *&amp;head, <a class="el" href="struct_item.html">Item</a> *item)</td></tr>
+<tr class="separator:aa5d77286afbfc6b17a0d1451ad95ab49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd462918c41e48b1868cc5f919220e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#adbd462918c41e48b1868cc5f919220e7">delete_item_name</a> (<a class="el" href="struct_item.html">Item</a> *&amp;head, string name)</td></tr>
+<tr class="separator:adbd462918c41e48b1868cc5f919220e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60c6bb8e7e4f4555e8bd4c5f114735c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#a60c6bb8e7e4f4555e8bd4c5f114735c5">delete_inventory</a> (<a class="el" href="struct_item.html">Item</a> *&amp;head)</td></tr>
+<tr class="separator:a60c6bb8e7e4f4555e8bd4c5f114735c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ef7686350f75b4882e995dfb2b2236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_item.html">Item</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#a66ef7686350f75b4882e995dfb2b2236">create_item</a> (string name, string type)</td></tr>
+<tr class="separator:a66ef7686350f75b4882e995dfb2b2236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0b904040f4ac6541653ab54a6db20e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#aca0b904040f4ac6541653ab54a6db20e">save_equipment</a> (string name, <a class="el" href="struct_item.html">Item</a> *inventory)</td></tr>
+<tr class="separator:aca0b904040f4ac6541653ab54a6db20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e1d80520ac0fdfe374e8ac081e3a63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_item.html">Item</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#ad2e1d80520ac0fdfe374e8ac081e3a63">load_item</a> (std::ifstream &amp;file)</td></tr>
+<tr class="separator:ad2e1d80520ac0fdfe374e8ac081e3a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8d3e32499c9e9e88ca3dd5489ad4c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_item.html">Item</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#acb8d3e32499c9e9e88ca3dd5489ad4c8">load_equipment</a> (string char_name)</td></tr>
+<tr class="separator:acb8d3e32499c9e9e88ca3dd5489ad4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:a5d82d97df55107fe58c7a8e8b943d4fe"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inventory_8h.html#a5d82d97df55107fe58c7a8e8b943d4fe">item_types</a> []</td></tr>
+<tr class="separator:a5d82d97df55107fe58c7a8e8b943d4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja definicji</h2>
+<a id="a9a88afb99960420b6e88b86d9a686383" name="a9a88afb99960420b6e88b86d9a686383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a88afb99960420b6e88b86d9a686383">&#9670;&#160;</a></span>ITEMS_TYPES_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITEMS_TYPES_COUNT&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a943995a7bf30da3587664920856533ab" name="a943995a7bf30da3587664920856533ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a943995a7bf30da3587664920856533ab">&#9670;&#160;</a></span>MAX_WEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_WEIGHT&#160;&#160;&#160;600</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="aa5d77286afbfc6b17a0d1451ad95ab49" name="aa5d77286afbfc6b17a0d1451ad95ab49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5d77286afbfc6b17a0d1451ad95ab49">&#9670;&#160;</a></span>add_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_item.html">Item</a> *&amp;&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_item.html">Item</a> *&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66ef7686350f75b4882e995dfb2b2236" name="a66ef7686350f75b4882e995dfb2b2236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ef7686350f75b4882e995dfb2b2236">&#9670;&#160;</a></span>create_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_item.html">Item</a> * create_item </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60c6bb8e7e4f4555e8bd4c5f114735c5" name="a60c6bb8e7e4f4555e8bd4c5f114735c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60c6bb8e7e4f4555e8bd4c5f114735c5">&#9670;&#160;</a></span>delete_inventory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_inventory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_item.html">Item</a> *&amp;&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbd462918c41e48b1868cc5f919220e7" name="adbd462918c41e48b1868cc5f919220e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd462918c41e48b1868cc5f919220e7">&#9670;&#160;</a></span>delete_item_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_item_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_item.html">Item</a> *&amp;&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fd953335eb2fa7fd6057c70995c85c0" name="a1fd953335eb2fa7fd6057c70995c85c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd953335eb2fa7fd6057c70995c85c0">&#9670;&#160;</a></span>inventory_weight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int inventory_weight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_item.html">Item</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a258e5d47a984637f28a57d438299a0c4" name="a258e5d47a984637f28a57d438299a0c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258e5d47a984637f28a57d438299a0c4">&#9670;&#160;</a></span>is_weapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_weapon </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb8d3e32499c9e9e88ca3dd5489ad4c8" name="acb8d3e32499c9e9e88ca3dd5489ad4c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb8d3e32499c9e9e88ca3dd5489ad4c8">&#9670;&#160;</a></span>load_equipment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_item.html">Item</a> * load_equipment </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>char_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2e1d80520ac0fdfe374e8ac081e3a63" name="ad2e1d80520ac0fdfe374e8ac081e3a63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e1d80520ac0fdfe374e8ac081e3a63">&#9670;&#160;</a></span>load_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_item.html">Item</a> * load_item </td>
+          <td>(</td>
+          <td class="paramtype">std::ifstream &amp;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca0b904040f4ac6541653ab54a6db20e" name="aca0b904040f4ac6541653ab54a6db20e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca0b904040f4ac6541653ab54a6db20e">&#9670;&#160;</a></span>save_equipment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void save_equipment </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_item.html">Item</a> *&#160;</td>
+          <td class="paramname"><em>inventory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49d8e3820560dc127e3b118e6e15ee91" name="a49d8e3820560dc127e3b118e6e15ee91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d8e3820560dc127e3b118e6e15ee91">&#9670;&#160;</a></span>stats_from_equipment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * stats_from_equipment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_item.html">Item</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3330dcd3c6142d0f78852a761c962d99" name="a3330dcd3c6142d0f78852a761c962d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3330dcd3c6142d0f78852a761c962d99">&#9670;&#160;</a></span>type_available()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool type_available </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_item.html">Item</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae67c5a64c8f5931a2b73646708e8fa53" name="ae67c5a64c8f5931a2b73646708e8fa53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae67c5a64c8f5931a2b73646708e8fa53">&#9670;&#160;</a></span>weight_avaible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int weight_avaible </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_item.html">Item</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja zmiennych</h2>
+<a id="a5d82d97df55107fe58c7a8e8b943d4fe" name="a5d82d97df55107fe58c7a8e8b943d4fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d82d97df55107fe58c7a8e8b943d4fe">&#9670;&#160;</a></span>item_types</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string item_types[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

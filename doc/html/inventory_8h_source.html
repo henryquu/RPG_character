@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RPG Character Creator: Plik źródłowy inventory.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RPG Character Creator
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">inventory.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="inventory_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef INVENTORY_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define INVENTORY_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="utils_8h.html">utils.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="inventory_8h.html#a943995a7bf30da3587664920856533ab">    8</a></span><span class="preprocessor">#define MAX_WEIGHT 600</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="inventory_8h.html#a9a88afb99960420b6e88b86d9a686383">    9</a></span><span class="preprocessor">#define ITEMS_TYPES_COUNT 7</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">extern</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="inventory_8h.html#a5d82d97df55107fe58c7a8e8b943d4fe">item_types</a>[];</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_item.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_item.html">Item</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_item.html#a342b7a351c9ae1c5430aa3ef65b670bd">   16</a></span>    std::string <a class="code hl_variable" href="struct_item.html#a342b7a351c9ae1c5430aa3ef65b670bd">name</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_item.html#a119b781b2b7f8e1f2615e18526bd8ade">   17</a></span>    std::string <a class="code hl_variable" href="struct_item.html#a119b781b2b7f8e1f2615e18526bd8ade">type</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_item.html#abc67d61b9927f1322b5c2342b96eb664">   19</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_item.html#abc67d61b9927f1322b5c2342b96eb664">equipped</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_item.html#a05e743552459fc8c2abdc80a0f4f0b0a">   20</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_item.html#a05e743552459fc8c2abdc80a0f4f0b0a">weight</a> = 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_item.html#ac4dc47e92624891d6b958a0cb35ee5f9">   22</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_item.html#ac4dc47e92624891d6b958a0cb35ee5f9">damage</a>[2] = {0, 0};</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_item.html#ab5cea89c1aafc48d22810e7ca4514d6c">   23</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_item.html#ab5cea89c1aafc48d22810e7ca4514d6c">range</a> = 0;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_item.html#a2c597b3cbd3ff3274df75135889b8af6">   24</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_item.html#a2c597b3cbd3ff3274df75135889b8af6">stats</a>[3] = {0, 0, 0};</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_item.html#af41ed24b86b2126cf7eacc591a863f47">   26</a></span>    <a class="code hl_struct" href="struct_item.html">Item</a> *<a class="code hl_variable" href="struct_item.html#af41ed24b86b2126cf7eacc591a863f47">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_struct" href="struct_item.html">Item</a>(std::string Name, std::string Type, <span class="keywordtype">int</span> Damage[2], <span class="keywordtype">int</span> Range, <span class="keywordtype">int</span> Stats[3], <span class="keywordtype">int</span> Weight);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_item.html#ab18eca7fd9332659c54fb1b811e3d8b8">save</a>(std::ofstream &amp;file); <span class="comment">// save into a file</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// return sum of weights of the inventory</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">int</span> <a class="code hl_function" href="inventory_8h.html#a1fd953335eb2fa7fd6057c70995c85c0">inventory_weight</a>(<a class="code hl_struct" href="struct_item.html">Item</a> *ptr);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// returns avaible weight from the starting MAX_WEIGHT</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">int</span> <a class="code hl_function" href="inventory_8h.html#ae67c5a64c8f5931a2b73646708e8fa53">weight_avaible</a>(<a class="code hl_struct" href="struct_item.html">Item</a> *ptr);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// checks if the type is a weapon</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">bool</span> <a class="code hl_function" href="inventory_8h.html#a258e5d47a984637f28a57d438299a0c4">is_weapon</a>(<span class="keywordtype">string</span> type);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// checks if chosen type of equipment is not used already</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keywordtype">bool</span> <a class="code hl_function" href="inventory_8h.html#a3330dcd3c6142d0f78852a761c962d99">type_available</a>(<a class="code hl_struct" href="struct_item.html">Item</a> *ptr, <span class="keywordtype">string</span> type);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// sums basic stats from equipped items</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keywordtype">int</span> *<a class="code hl_function" href="inventory_8h.html#a49d8e3820560dc127e3b118e6e15ee91">stats_from_equipment</a>(<a class="code hl_struct" href="struct_item.html">Item</a> *ptr);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// adds items to the end of the inventory</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">void</span> <a class="code hl_function" href="inventory_8h.html#aa5d77286afbfc6b17a0d1451ad95ab49">add_item</a>(<a class="code hl_struct" href="struct_item.html">Item</a> *&amp;head, <a class="code hl_struct" href="struct_item.html">Item</a> *item);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// deletes item using it&#39;s name</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">void</span> <a class="code hl_function" href="inventory_8h.html#adbd462918c41e48b1868cc5f919220e7">delete_item_name</a>(<a class="code hl_struct" href="struct_item.html">Item</a> *&amp;head, <span class="keywordtype">string</span> name);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// deletes the whole inventory, mainly for memory leaks</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keywordtype">void</span> <a class="code hl_function" href="inventory_8h.html#a60c6bb8e7e4f4555e8bd4c5f114735c5">delete_inventory</a>(<a class="code hl_struct" href="struct_item.html">Item</a> *&amp;head);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// creates an item with random base stats</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><a class="code hl_struct" href="struct_item.html">Item</a> *<a class="code hl_function" href="inventory_8h.html#a66ef7686350f75b4882e995dfb2b2236">create_item</a>(<span class="keywordtype">string</span> name, <span class="keywordtype">string</span> type);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// saves equipment to the file</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keywordtype">void</span> <a class="code hl_function" href="inventory_8h.html#aca0b904040f4ac6541653ab54a6db20e">save_equipment</a>(<span class="keywordtype">string</span> name, <a class="code hl_struct" href="struct_item.html">Item</a> *inventory);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// takes as input a pointer in the file</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">// loads stats and creates an item</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><a class="code hl_struct" href="struct_item.html">Item</a> *<a class="code hl_function" href="inventory_8h.html#ad2e1d80520ac0fdfe374e8ac081e3a63">load_item</a>(std::ifstream &amp;file);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// loads all items owned by a character</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><a class="code hl_struct" href="struct_item.html">Item</a> *<a class="code hl_function" href="inventory_8h.html#acb8d3e32499c9e9e88ca3dd5489ad4c8">load_equipment</a>(<span class="keywordtype">string</span> char_name);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif </span></div>
+<div class="ttc" id="ainventory_8h_html_a1fd953335eb2fa7fd6057c70995c85c0"><div class="ttname"><a href="inventory_8h.html#a1fd953335eb2fa7fd6057c70995c85c0">inventory_weight</a></div><div class="ttdeci">int inventory_weight(Item *ptr)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:33</div></div>
+<div class="ttc" id="ainventory_8h_html_a258e5d47a984637f28a57d438299a0c4"><div class="ttname"><a href="inventory_8h.html#a258e5d47a984637f28a57d438299a0c4">is_weapon</a></div><div class="ttdeci">bool is_weapon(string type)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:48</div></div>
+<div class="ttc" id="ainventory_8h_html_a3330dcd3c6142d0f78852a761c962d99"><div class="ttname"><a href="inventory_8h.html#a3330dcd3c6142d0f78852a761c962d99">type_available</a></div><div class="ttdeci">bool type_available(Item *ptr, string type)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:54</div></div>
+<div class="ttc" id="ainventory_8h_html_a49d8e3820560dc127e3b118e6e15ee91"><div class="ttname"><a href="inventory_8h.html#a49d8e3820560dc127e3b118e6e15ee91">stats_from_equipment</a></div><div class="ttdeci">int * stats_from_equipment(Item *ptr)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:66</div></div>
+<div class="ttc" id="ainventory_8h_html_a5d82d97df55107fe58c7a8e8b943d4fe"><div class="ttname"><a href="inventory_8h.html#a5d82d97df55107fe58c7a8e8b943d4fe">item_types</a></div><div class="ttdeci">string item_types[]</div><div class="ttdef"><b>Definition:</b> inventory.cpp:5</div></div>
+<div class="ttc" id="ainventory_8h_html_a60c6bb8e7e4f4555e8bd4c5f114735c5"><div class="ttname"><a href="inventory_8h.html#a60c6bb8e7e4f4555e8bd4c5f114735c5">delete_inventory</a></div><div class="ttdeci">void delete_inventory(Item *&amp;head)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:117</div></div>
+<div class="ttc" id="ainventory_8h_html_a66ef7686350f75b4882e995dfb2b2236"><div class="ttname"><a href="inventory_8h.html#a66ef7686350f75b4882e995dfb2b2236">create_item</a></div><div class="ttdeci">Item * create_item(string name, string type)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:127</div></div>
+<div class="ttc" id="ainventory_8h_html_aa5d77286afbfc6b17a0d1451ad95ab49"><div class="ttname"><a href="inventory_8h.html#aa5d77286afbfc6b17a0d1451ad95ab49">add_item</a></div><div class="ttdeci">void add_item(Item *&amp;head, Item *item)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:85</div></div>
+<div class="ttc" id="ainventory_8h_html_aca0b904040f4ac6541653ab54a6db20e"><div class="ttname"><a href="inventory_8h.html#aca0b904040f4ac6541653ab54a6db20e">save_equipment</a></div><div class="ttdeci">void save_equipment(string name, Item *inventory)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:153</div></div>
+<div class="ttc" id="ainventory_8h_html_acb8d3e32499c9e9e88ca3dd5489ad4c8"><div class="ttname"><a href="inventory_8h.html#acb8d3e32499c9e9e88ca3dd5489ad4c8">load_equipment</a></div><div class="ttdeci">Item * load_equipment(string char_name)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:202</div></div>
+<div class="ttc" id="ainventory_8h_html_ad2e1d80520ac0fdfe374e8ac081e3a63"><div class="ttname"><a href="inventory_8h.html#ad2e1d80520ac0fdfe374e8ac081e3a63">load_item</a></div><div class="ttdeci">Item * load_item(std::ifstream &amp;file)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:174</div></div>
+<div class="ttc" id="ainventory_8h_html_adbd462918c41e48b1868cc5f919220e7"><div class="ttname"><a href="inventory_8h.html#adbd462918c41e48b1868cc5f919220e7">delete_item_name</a></div><div class="ttdeci">void delete_item_name(Item *&amp;head, string name)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:98</div></div>
+<div class="ttc" id="ainventory_8h_html_ae67c5a64c8f5931a2b73646708e8fa53"><div class="ttname"><a href="inventory_8h.html#ae67c5a64c8f5931a2b73646708e8fa53">weight_avaible</a></div><div class="ttdeci">int weight_avaible(Item *ptr)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:44</div></div>
+<div class="ttc" id="astruct_item_html"><div class="ttname"><a href="struct_item.html">Item</a></div><div class="ttdef"><b>Definition:</b> inventory.h:15</div></div>
+<div class="ttc" id="astruct_item_html_a05e743552459fc8c2abdc80a0f4f0b0a"><div class="ttname"><a href="struct_item.html#a05e743552459fc8c2abdc80a0f4f0b0a">Item::weight</a></div><div class="ttdeci">int weight</div><div class="ttdef"><b>Definition:</b> inventory.h:20</div></div>
+<div class="ttc" id="astruct_item_html_a119b781b2b7f8e1f2615e18526bd8ade"><div class="ttname"><a href="struct_item.html#a119b781b2b7f8e1f2615e18526bd8ade">Item::type</a></div><div class="ttdeci">std::string type</div><div class="ttdef"><b>Definition:</b> inventory.h:17</div></div>
+<div class="ttc" id="astruct_item_html_a2c597b3cbd3ff3274df75135889b8af6"><div class="ttname"><a href="struct_item.html#a2c597b3cbd3ff3274df75135889b8af6">Item::stats</a></div><div class="ttdeci">int stats[3]</div><div class="ttdef"><b>Definition:</b> inventory.h:24</div></div>
+<div class="ttc" id="astruct_item_html_a342b7a351c9ae1c5430aa3ef65b670bd"><div class="ttname"><a href="struct_item.html#a342b7a351c9ae1c5430aa3ef65b670bd">Item::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> inventory.h:16</div></div>
+<div class="ttc" id="astruct_item_html_ab18eca7fd9332659c54fb1b811e3d8b8"><div class="ttname"><a href="struct_item.html#ab18eca7fd9332659c54fb1b811e3d8b8">Item::save</a></div><div class="ttdeci">void save(std::ofstream &amp;file)</div><div class="ttdef"><b>Definition:</b> inventory.cpp:23</div></div>
+<div class="ttc" id="astruct_item_html_ab5cea89c1aafc48d22810e7ca4514d6c"><div class="ttname"><a href="struct_item.html#ab5cea89c1aafc48d22810e7ca4514d6c">Item::range</a></div><div class="ttdeci">int range</div><div class="ttdef"><b>Definition:</b> inventory.h:23</div></div>
+<div class="ttc" id="astruct_item_html_abc67d61b9927f1322b5c2342b96eb664"><div class="ttname"><a href="struct_item.html#abc67d61b9927f1322b5c2342b96eb664">Item::equipped</a></div><div class="ttdeci">bool equipped</div><div class="ttdef"><b>Definition:</b> inventory.h:19</div></div>
+<div class="ttc" id="astruct_item_html_ac4dc47e92624891d6b958a0cb35ee5f9"><div class="ttname"><a href="struct_item.html#ac4dc47e92624891d6b958a0cb35ee5f9">Item::damage</a></div><div class="ttdeci">int damage[2]</div><div class="ttdef"><b>Definition:</b> inventory.h:22</div></div>
+<div class="ttc" id="astruct_item_html_af41ed24b86b2126cf7eacc591a863f47"><div class="ttname"><a href="struct_item.html#af41ed24b86b2126cf7eacc591a863f47">Item::next</a></div><div class="ttdeci">Item * next</div><div class="ttdef"><b>Definition:</b> inventory.h:26</div></div>
+<div class="ttc" id="autils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

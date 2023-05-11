@@ -20,6 +20,7 @@ Character::~Character(){
     delete_inventory(inventory);
 }
 
+// save the character
 void Character::save(){
     remove_from_file(name, PATH_CHAR);
 
@@ -35,6 +36,7 @@ void Character::save(){
     save_equipment(name, inventory);
 }
 
+// create a character
 Character *create_character(string name, int class_, int race){
     int stats[3] = {40, 40, 40};
 
@@ -60,6 +62,7 @@ Character *create_character(string name, int class_, int race){
     return character;
 }
 
+// load character from file using it's index number
 Character *load_character(int nr){
     string name, race, class_;
 
