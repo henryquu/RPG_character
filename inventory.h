@@ -5,7 +5,7 @@
 #include "utils.h"
 
 
-#define MAX_WEIGHT 450
+#define MAX_WEIGHT 600
 #define ITEMS_TYPES_COUNT 7
 
 
