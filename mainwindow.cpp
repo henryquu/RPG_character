@@ -25,6 +25,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+// connect all buttons to functions
 void MainWindow::set_connections(){
     connect(ui->pbNewChar, &QPushButton::clicked,
             this, &MainWindow::pbNewChar_clicked);
@@ -72,6 +73,7 @@ void MainWindow::set_connections(){
             this, &MainWindow::pbRemoveChar_clicked);
 }
 
+// load radio buttons in Item creation menu
 void MainWindow::init_types_rbs(){
     QGroupBox *group = ui->gbItemType;
     QRadioButton *rb = nullptr;
@@ -92,6 +94,7 @@ void MainWindow::init_types_rbs(){
     }
 }
 
+// print list of characters in Main menu
 void MainWindow::print_characters(){
     string line;
     QString name;
@@ -117,6 +120,7 @@ void MainWindow::print_characters(){
     file.close();
 }
 
+// set min-max values of the spinbox in Main menu
 void MainWindow::refresh_char_count(int nr){
     QSpinBox *spinbox = ui->sbCharNr;
 
@@ -172,6 +176,7 @@ void MainWindow::pbRemoveChar_clicked(){
     showMainMenu();
 }
 
+// change to Character menu
 void MainWindow::showCharacterMenu(){
     if (character == nullptr){
         ui->statusbar->clearMessage();
@@ -183,6 +188,7 @@ void MainWindow::showCharacterMenu(){
     print_character();
 }
 
+// print character stats in Character menu
 void MainWindow::print_character(){
     ui->charStats->clear();
 
@@ -218,6 +224,7 @@ void MainWindow::print_character(){
     delete [] eq_stats;
 }
 
+// get chosen race in Create character menu
 int MainWindow::get_race(){
     int result;
 
@@ -231,6 +238,7 @@ int MainWindow::get_race(){
     return result;
 }
 
+// get chosen class in Create character menu
 int MainWindow::get_class(){
     int result;
 
@@ -244,6 +252,7 @@ int MainWindow::get_class(){
     return result;
 }
 
+// change to Main menu
 void MainWindow::showMainMenu(){
     ui->stackedWidget->setCurrentIndex(0);
     print_characters();
@@ -264,7 +273,7 @@ void MainWindow::pbItemMenu_clicked()
     print_item();
 }
 
-
+// print item stats in Item menu
 void MainWindow::print_item(){
     QTextBrowser *text = ui->itemStats;
     QString str;
@@ -379,6 +388,7 @@ void MainWindow::pbCreateItem_clicked(){
     print_item();
 }
 
+ // get chosen item type in Create item menu
 string MainWindow::get_type(){
     int checked = 0;
     QList<QRadioButton *> allButtons = ui->gbItemType->findChildren<QRadioButton *>();
@@ -393,6 +403,7 @@ string MainWindow::get_type(){
     return item_types[checked];
 }
 
+// check if there are characters like '"./
 bool MainWindow::check_for_symbols(QString name){
     static QRegularExpression re(R"([^a-zA-Z\d\s:])");
 

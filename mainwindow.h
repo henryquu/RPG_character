@@ -9,6 +9,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
+// array of base stats names
 extern QList<QString> stats_list;
 
 class MainWindow : public QMainWindow
@@ -48,7 +49,10 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
+    // current character object
     Character *character = nullptr;
+    // current item object
     Item *cur_item = nullptr;
 
     // connect all buttons to functions

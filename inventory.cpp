@@ -20,6 +20,7 @@ Item::Item(string Name, string Type, int Damage[2], int Range, int Stats[3], int
     weight = Weight;
 }
 
+// save into a file
 void Item::save(std::ofstream &file){
     file << " | " << name <<  ' ' << type <<  ' ' << equipped <<  ' ' << weight;
 
@@ -30,6 +31,7 @@ void Item::save(std::ofstream &file){
         file << ' ' << stats[i];
 }
 
+// return sum of weights of the inventory
 int inventory_weight(Item *ptr){
     int weight = 0;
 
@@ -41,16 +43,19 @@ int inventory_weight(Item *ptr){
     return weight;
 }
 
+// avaible weight from the starting MAX_WEIGHT
 int weight_avaible(Item *ptr){
     return MAX_WEIGHT - inventory_weight(ptr);
 }
 
+// checks if the type is a weapon
 bool is_weapon(string type){
     if (type.compare("Wand") == 0 || type.compare("Bow") == 0 || type.compare("Sword") == 0)
         return true;
     return false;
 }
 
+// checks if chosen type of equipment is not used already
 bool type_available(Item *ptr, string type){
     while (ptr){
         if (ptr->equipped)
@@ -63,6 +68,7 @@ bool type_available(Item *ptr, string type){
     return true;
 }
 
+// sums basic stats from equipped items
 int *stats_from_equipment(Item *ptr){
     int *lst = new int[6]{0};
 
@@ -82,6 +88,7 @@ int *stats_from_equipment(Item *ptr){
     return lst;
 }
 
+// adds items to the end of the inventory
 void add_item(Item *&head, Item *item){
     if (!head){
         head = item;
@@ -95,6 +102,7 @@ void add_item(Item *&head, Item *item){
     ptr->next = item;
 }
 
+// deletes item using it's name
 void delete_item_name(Item *&head, string name){
     Item *ptr = head;
     Item *prev = head;
@@ -114,6 +122,7 @@ void delete_item_name(Item *&head, string name){
     }
 }
 
+// deletes the whole inventory
 void delete_inventory(Item *&head){
     Item *ptr = head;
 
@@ -124,6 +133,7 @@ void delete_inventory(Item *&head){
     }
 }
 
+// creates an item with random base stats
 Item *create_item(string name, string type){
     int damage[2];
     int range = 0;
@@ -150,7 +160,8 @@ Item *create_item(string name, string type){
     return item;
 }
 
-void save_equipment(string name, Item *inventory){
+// saves inventory to the file
+void save_inventory(string name, Item *inventory){
     remove_from_file(name, PATH_EQ);
 
     std::ofstream file(PATH_EQ, std::ofstream::app);
@@ -170,7 +181,8 @@ void save_equipment(string name, Item *inventory){
     file.close();
 }
 
-
+// takes as input a pointer in the file
+// loads stats and creates an item
 Item *load_item(std::ifstream &file){
     string name = "";
     string type;
@@ -199,7 +211,8 @@ Item *load_item(std::ifstream &file){
     return ptr;
 }
 
-Item *load_equipment(string char_name){
+// loads all items owned by a character
+Item *load_inventory(string char_name){
     Item *head = nullptr;
     Item *ptr;
 

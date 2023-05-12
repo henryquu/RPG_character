@@ -84,7 +84,7 @@ class Character{
 Character *create_character(string name, int class_, int race);
 
 /**
- * @brief load a character
+ * @brief Load a character
  * Loads character from PATH_CHAR file, uses line number
  * @param nr number of line to laod the character from
  * @return ptr to the created character object
@@ -92,4 +92,4 @@ Character *create_character(string name, int class_, int race);
 Character *load_character(int nr);
 
 
-#endif 
+#endif // CHARACTERS_H

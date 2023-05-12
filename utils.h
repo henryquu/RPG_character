@@ -27,4 +27,4 @@ using std::string;
 void remove_from_file(string name, string file_path);
 
 
-#endif 
+#endif // UTILS_H

@@ -33,7 +33,7 @@ void Character::save(){
 
     file.close();
 
-    save_equipment(name, inventory);
+    save_inventory(name, inventory);
 }
 
 // create a character
@@ -90,7 +90,7 @@ Character *load_character(int nr){
     file.close();
 
     Character *character = new Character(name, race, class_, stats, main_stat);
-    character->inventory = load_equipment(name);
+    character->inventory = load_inventory(name);
 
     return character;
 }
