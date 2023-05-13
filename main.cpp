@@ -3,9 +3,9 @@
   * \par RPG Character creator
   * App for creating a rpg character and it's items
   * \note Wording used:
-  * \b base stats: intelligence, dexterity and strength
-  * \b inventory - all items belonging to a character
-  * \b equipment - items with equipped status
+  * 1. *base stats*: intelligence, dexterity and strength\n
+  * 2. *inventory* - all items belonging to a character\n
+  * 3. *equipment* - items with equipped status
   * \author Sebastian Płaczek
   * \date 13.05.2023
   */

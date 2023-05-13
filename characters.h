@@ -32,14 +32,15 @@ class Character{
         /// Name of the character
         string name;
 
-        /// Race
+        /// Race of the character
         string race;
-        /// Class
+        /// Class of the character
         string class_;
 
-        /// Basic stats: intelligence, dexterity, strength
+        /// Base stats: intelligence, dexterity, strength
         int stats[3];
-        //// Main stat used by the character, used in calculating damage dealt
+
+        /// Main stat used by the character, used in calculating damage dealt
         int main_stat;
 
         /// Range of the character
@@ -61,12 +62,11 @@ class Character{
         Character(string Name, string Race, string Class_, int *Stats, int Main_stat);
 
         /**
-         * @brief Destructor
+         * @brief Character destructor
          */
         ~Character();
 
         /**
-         * @brief Save character
          * Saves character into the PATH_CHAR file
          */
         void save();

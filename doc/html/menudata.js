@@ -23,22 +23,22 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Strona główna",url:"index.html"},
-{text:"Dodatkowe strony",url:"pages.html"},
-{text:"Przestrzenie nazw",url:"namespaces.html",children:[
-{text:"Lista przestrzeni nazw",url:"namespaces.html"}]},
-{text:"Klasy",url:"annotated.html",children:[
-{text:"Lista klas",url:"annotated.html"},
-{text:"Indeks klas",url:"classes.html"},
-{text:"Hierarchia klas",url:"inherits.html"},
-{text:"Składowe klas",url:"functions.html",children:[
-{text:"Wszystko",url:"functions.html"},
-{text:"Funkcje",url:"functions_func.html"},
-{text:"Zmienne",url:"functions_vars.html"}]}]},
-{text:"Pliki",url:"files.html",children:[
-{text:"Lista plików",url:"files.html"},
-{text:"Składowe plików",url:"globals.html",children:[
-{text:"Wszystko",url:"globals.html",children:[
+{text:"Main Page",url:"index.html"},
+{text:"Related Pages",url:"pages.html"},
+{text:"Namespaces",url:"namespaces.html",children:[
+{text:"Namespace List",url:"namespaces.html"}]},
+{text:"Classes",url:"annotated.html",children:[
+{text:"Class List",url:"annotated.html"},
+{text:"Class Index",url:"classes.html"},
+{text:"Class Hierarchy",url:"inherits.html"},
+{text:"Class Members",url:"functions.html",children:[
+{text:"All",url:"functions.html"},
+{text:"Functions",url:"functions_func.html"},
+{text:"Variables",url:"functions_vars.html"}]}]},
+{text:"Files",url:"files.html",children:[
+{text:"File List",url:"files.html"},
+{text:"File Members",url:"globals.html",children:[
+{text:"All",url:"globals.html",children:[
 {text:"a",url:"globals.html#index_a"},
 {text:"c",url:"globals.html#index_c"},
 {text:"d",url:"globals.html#index_d"},
@@ -50,7 +50,7 @@ var menudata={children:[
 {text:"s",url:"globals.html#index_s"},
 {text:"t",url:"globals.html#index_t"},
 {text:"w",url:"globals.html#index_w"}]},
-{text:"Funkcje",url:"globals_func.html",children:[
+{text:"Functions",url:"globals_func.html",children:[
 {text:"a",url:"globals_func.html#index_a"},
 {text:"c",url:"globals_func.html#index_c"},
 {text:"d",url:"globals_func.html#index_d"},
@@ -61,5 +61,5 @@ var menudata={children:[
 {text:"s",url:"globals_func.html#index_s"},
 {text:"t",url:"globals_func.html#index_t"},
 {text:"w",url:"globals_func.html#index_w"}]},
-{text:"Zmienne",url:"globals_vars.html"},
-{text:"Definicje",url:"globals_defs.html"}]}]}]}
+{text:"Variables",url:"globals_vars.html"},
+{text:"Macros",url:"globals_defs.html"}]}]}]}

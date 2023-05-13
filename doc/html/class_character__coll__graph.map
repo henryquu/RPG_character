@@ -1,5 +1,5 @@
 <map id="Character" name="Character">
-<area shape="rect" id="node1" title=" " alt="" coords="5,224,83,251"/>
+<area shape="rect" id="node1" title="The Character class." alt="" coords="5,224,83,251"/>
 <area shape="rect" id="node2" title=" " alt="" coords="17,5,71,32"/>
-<area shape="rect" id="node3" href="$struct_item.html" title=" " alt="" coords="89,123,135,149"/>
+<area shape="rect" id="node3" href="$struct_item.html" title="Item structure with some basic stats and pointer to the next item." alt="" coords="89,123,135,149"/>
 </map>

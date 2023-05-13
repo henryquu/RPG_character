@@ -10,17 +10,19 @@
 #include <iostream>
 #include <string>
 
-/// default file paths for data
+/// Default file paths for saving and loading characters
 #define PATH_CHAR "../data/characters.txt"
+/// Default file paths for saving and loading inventory
 #define PATH_EQ "../data/equipment.txt"
+/// Default file paths for creating a temporary file
 #define PATH_TMP "../data/tmp.txt"
 
 
 using std::string;
 
-/**  \brief Remove a line starting with a word
- *  Remove item/character from file and save the new version
- * limits characters to unique names.
+/**
+ *  @brief Remove item/character from file and save the new version.
+ * *limits characters to unique names*
  * \param name chosen word
  * \param file_path path of the file used
 */

@@ -1,7 +1,7 @@
 <map id="mainwindow.h" name="mainwindow.h">
 <area shape="rect" id="node1" title=" " alt="" coords="68,5,171,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,111,107"/>
-<area shape="rect" id="node3" href="$characters_8h.html" title=" " alt="" coords="135,80,229,107"/>
+<area shape="rect" id="node3" href="$characters_8h.html" title="Character class character class and it&#39;s functions." alt="" coords="135,80,229,107"/>
 <area shape="rect" id="node4" href="$inventory_8h.html" title=" " alt="" coords="140,155,224,181"/>
 <area shape="rect" id="node5" href="$utils_8h.html" title=" " alt="" coords="154,229,210,256"/>
 <area shape="rect" id="node6" title=" " alt="" coords="104,304,175,331"/>

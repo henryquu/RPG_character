@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "acdilmrstw~",
   5: "cdeimnrstw",
   6: "cimpr",
-  7: "i"
+  7: "mr"
 };
 
 var indexSectionNames =
@@ -24,13 +24,13 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "Wszystko",
-  1: "Klasy",
-  2: "Przestrzenie nazw",
-  3: "Pliki",
-  4: "Funkcje",
-  5: "Zmienne",
-  6: "Definicje",
-  7: "Strony"
+  0: "All",
+  1: "Classes",
+  2: "Namespaces",
+  3: "Files",
+  4: "Functions",
+  5: "Variables",
+  6: "Macros",
+  7: "Pages"
 };
 
